@@ -1,0 +1,15 @@
+<package format="2">
+  <name>limo_vision</name>
+  <version>0.0.1</version>
+  <description>Vision system for LIMO robot using Keras</description>
+  <maintainer email="user@example.com">User</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

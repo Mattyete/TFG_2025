@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="limo_vision" type="keras_detector.py" name="keras_detector" output="screen"/>
+</launch>
