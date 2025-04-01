@@ -9,7 +9,7 @@ El objetivo principal del TFG es desarrollar un sistema que permita al robot LIM
 ## Características principales
 
 - Configuración del entorno de desarrollo con **ROS2** (y compatibilidad con **ROS Noetic**).
-- Simulación del entorno de navegación utilizando herramientas como **Gazebo** o entornos personalizados.
+- Simulación del entorno de navegación utilizando herramientas como **Gazebo**, **RViz** o entornos personalizados.
 - Control de movimiento autónomo mediante navegación planificada.
 - Detección y reconocimiento de señales mediante técnicas de **machine learning / deep learning** aplicadas a imágenes.
 - Integración de los módulos de percepción y control para una experiencia completa de conducción autónoma.
@@ -25,10 +25,12 @@ El objetivo principal del TFG es desarrollar un sistema que permita al robot LIM
 ## Requisitos
 
 - Ubuntu 20.04 o superior
+- ROS Noetic
 - ROS2 Foxy o Humble (dependiendo de la configuración)
 - Python 3.8+
 - OpenCV
-- TensorFlow o PyTorch (según el modelo de detección)
+- TensorFlow (modelo de detección)
+- Keras
 - Gazebo (para simulación)
 - Dependencias de AgileX Robotics y LIMO SDK
 
@@ -36,5 +38,5 @@ El objetivo principal del TFG es desarrollar un sistema que permita al robot LIM
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/nombre-del-repo.git
-   cd nombre-del-repo
+   git clone https://github.com/Mattyete/TFG_2025.git
+   cd TFG_2025
