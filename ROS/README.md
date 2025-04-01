@@ -19,12 +19,12 @@
 
 1. Lanzar la simulación:
    ```bash
-   ros2 launch launch/robot_simulation.launch.py
+   ros launch launch/robot_simulation.launch.py
    
 2. Ejecutar detección de señales:
    ```bash
-   ros2 run signal_detection signal_detector_node
+   ros run signal_detection signal_detector_node
 
 3. Activar la conducción autónoma:
    ```bash
-   ros2 launch launch/autonomous_drive.launch.py
+   ros launch launch/autonomous_drive.launch.py
