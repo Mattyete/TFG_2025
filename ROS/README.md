@@ -21,7 +21,6 @@
    ```bash
    rostopic list
 
-
 ## Uso
 
 1. Lanzar la simulación:
