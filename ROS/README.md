@@ -1,19 +1,26 @@
 ## Instalación
 
-1. Clona el repositorio:
+1. Clona el repositorio (en theConstruct):
    ```bash
    git clone https://github.com/Mattyete/TFG_2025.git
    cd TFG_2025
    
-2. Instala las dependencias (puedes usar un script o entorno virtual):
+2. Hacer el script ejecutable i instalar las dependencias (en theConstruct):
    ```bash
-   sudo apt update
-   rosdep install --from-paths src --ignore-src -r -y
+   chmod +x ~/catkin_ws/src/limo_vision/scripts/keras_detector.py
+   sudo pip install keras
+   sudo pip install tensorflow
    
 3. Compila el workspace:
    ```bash
-   colcon build
-   source install/setup.bash
+   cd ~/catkin_ws
+   catkin_make
+   source devel/setup.bash
+   
+4. Verificar el topic:
+   ```bash
+   rostopic list
+
 
 ## Uso
 
