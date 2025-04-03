@@ -7,13 +7,13 @@
    
 2. Hacer el script ejecutable i instalar las dependencias (theConstruct):
    ```bash
-   chmod +x ~/catkin_ws/src/limo_vision/scripts/keras_detector.py
+   chmod +x ~/TFG_2025/ROS/catkin_ws/src/limo_vision/scripts/keras_detector.py
    sudo pip install keras
    sudo pip install tensorflow
    
 3. Compila el workspace (theConstruct):
    ```bash
-   cd ~/catkin_ws
+   cd ~/TFG_2025/ROS/catkin_ws
    catkin_make
    source devel/setup.bash
 
