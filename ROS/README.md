@@ -17,7 +17,6 @@
    catkin_make
    source devel/setup.bash
 
-
 ## Uso
 
 1. Lanzar la cámara ORBBEC (LIMO):
