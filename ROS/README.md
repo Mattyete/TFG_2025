@@ -31,3 +31,7 @@
 3. Lanzar el nodo de clasificación (theConstruct):
    ```bash
    roslaunch limo_vision detect_signs.launch
+
+4. Parar o seguir haciendo fotos (theConstruct) (true/false):
+   ```bash
+   rostopic pub /capture_toggle std_msgs/Bool "data: true"
