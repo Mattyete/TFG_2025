@@ -29,7 +29,7 @@ class KerasImageClassifier:
 
         # Capturas
         self.capture_enabled = True
-        self.capture_dir = os.path.expanduser("~/Pictures/limo_captures")
+        self.capture_dir = os.path.expanduser("~/TFG_2025/ROS/catkin_ws/src/limo_vision/limo_captures")
         os.makedirs(self.capture_dir, exist_ok=True)
         self.last_capture_time = time.time()
         self.capture_interval = 1.0  # segundos
