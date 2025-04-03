@@ -61,7 +61,7 @@ class KerasImageClassifier:
             predictions = self.model.predict(img)
             class_index = np.argmax(predictions)
             class_name = self.labels[class_index]
-            rospy.loginfo(f"🎯 Detectado: {class_name}")
+            rospy.loginfo(f"Detectado: {class_name}")
             self.class_pub.publish(class_name)
 
             # Guardar imagen si está activado
