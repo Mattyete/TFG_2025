@@ -7,7 +7,7 @@
    
 2. Hacer el script ejecutable i instalar las dependencias (theConstruct):
    ```bash
-   chmod +x ~/TFG_2025/ROS/catkin_ws/src/limo_vision/scripts/keras_detector.py
+   chmod +x ~/TFG_2025/ROS2/catkin_ws/src/limo_vision/scripts/keras_detector.py
    sudo pip install keras
    sudo pip install tensorflow
    
@@ -21,16 +21,16 @@
 
 1. Lanzar la cámara ORBBEC (LIMO):
    ```bash
-   roslaunch astra_camera dabai_u3.launch
+   ros2 launch astra_camera dabai.launch.py
 
 2. Verificar el topic (theConstruct):
    ```bash
-   rostopic list
+   ros2 topic list
    
 3. Lanzar el nodo de clasificación (theConstruct):
    ```bash
-   roslaunch limo_vision detect_signs.launch
+   ros2 launch limo_vision detect_signs.launch.py
 
 4. Parar o seguir haciendo fotos (theConstruct) (true/false):
    ```bash
-   rostopic pub /capture_toggle std_msgs/Bool "data: true"
+   ros2 topic pub /capture_toggle std_msgs/msg/Bool "data: true"
