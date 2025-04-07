@@ -13,10 +13,10 @@
    
 3. Compila el workspace (theConstruct):
    ```bash
-   cd ~/TFG_2025/ROS/catkin_ws
-   catkin_make
-   source devel/setup.bash
-
+   cd ~/TFG_2025/ROS2/limo_vision_ws
+   colcon build
+   source install/setup.bash
+   
 ## Uso
 
 1. Lanzar la cámara ORBBEC (LIMO):
