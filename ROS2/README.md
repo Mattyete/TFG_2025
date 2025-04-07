@@ -1,30 +1,36 @@
 ## Instalación
 
-1. Clona el repositorio:
+1. Clona el repositorio (theConstruct):
    ```bash
    git clone https://github.com/Mattyete/TFG_2025.git
    cd TFG_2025
    
-2. Instala las dependencias (puedes usar un script o entorno virtual):
+2. Hacer el script ejecutable i instalar las dependencias (theConstruct):
    ```bash
-   sudo apt update
-   rosdep install --from-paths src --ignore-src -r -y
+   chmod +x ~/TFG_2025/ROS/catkin_ws/src/limo_vision/scripts/keras_detector.py
+   sudo pip install keras
+   sudo pip install tensorflow
    
-3. Compila el workspace:
+3. Compila el workspace (theConstruct):
    ```bash
-   colcon build
-   source install/setup.bash
+   cd ~/TFG_2025/ROS/catkin_ws
+   catkin_make
+   source devel/setup.bash
 
 ## Uso
 
-1. Lanzar la simulación:
+1. Lanzar la cámara ORBBEC (LIMO):
    ```bash
-   ros2 launch launch/robot_simulation.launch.py
-   
-2. Ejecutar detección de señales:
-   ```bash
-   ros2 run signal_detection signal_detector_node
+   roslaunch astra_camera dabai_u3.launch
 
-3. Activar la conducción autónoma:
+2. Verificar el topic (theConstruct):
    ```bash
-   ros2 launch launch/autonomous_drive.launch.py
+   rostopic list
+   
+3. Lanzar el nodo de clasificación (theConstruct):
+   ```bash
+   roslaunch limo_vision detect_signs.launch
+
+4. Parar o seguir haciendo fotos (theConstruct) (true/false):
+   ```bash
+   rostopic pub /capture_toggle std_msgs/Bool "data: true"
