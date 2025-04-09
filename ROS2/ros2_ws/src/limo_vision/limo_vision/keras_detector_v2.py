@@ -32,7 +32,7 @@ class KerasImageClassifier(Node):
 
         # Capturas
         self.capture_enabled = True
-        self.capture_dir = os.path.expanduser("~/TFG_2025/ROS2/ros2_ws/src/limo_vision/limo_vision/rUBot_captures")
+        self.capture_dir = os.path.expanduser("~/TFG_2025/ROS2/ros2_ws/src/limo_vision/rUBot_captures")
         os.makedirs(self.capture_dir, exist_ok=True)
         self.create_class_dirs()
         self.last_capture_time = time.time()
