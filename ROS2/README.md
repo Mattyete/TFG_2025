@@ -7,13 +7,13 @@
    
 2. Hacer el script ejecutable i instalar las dependencias (theConstruct):
    ```bash
-   chmod +x ~/TFG_2025/ROS2/src/limo_vision/scripts/keras_detector.py
+   chmod +x ~/TFG_2025/ROS2/ros2_ws/src/limo_vision/scripts/keras_detector_v2.py
    sudo pip install keras
    sudo pip install tensorflow
    
 3. Compila el workspace (theConstruct):
    ```bash
-   cd ~/TFG_2025/ROS2/src/limo_vision_ws
+   cd ~/TFG_2025/ROS2/ros2_ws
    colcon build
    source install/setup.bash
    
@@ -29,8 +29,8 @@
    
 3. Lanzar el nodo de clasificación (theConstruct):
    ```bash
-   ros2 launch limo_vision detect_signs.launch.py
+   ros2 launch limo_vision keras_detector.launch.py
 
 4. Parar o seguir haciendo fotos (theConstruct) (true/false):
    ```bash
-   ros2 topic pub /capture_toggle std_msgs/msg/Bool "data: true"
+   ros2 topic pub /capture_toggle std_msgs/Bool "data: false"
